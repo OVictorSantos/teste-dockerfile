@@ -5,6 +5,6 @@ EXPOSE ${PORT}
 
 USER root
 
-RUN npm ci --omit=dev && rm -rf .npm
+RUN yum update
 
-CMD npm start
+CMD ls
