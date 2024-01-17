@@ -5,6 +5,4 @@ EXPOSE ${PORT}
 
 USER root
 
-RUN yum update
-
 CMD ls
