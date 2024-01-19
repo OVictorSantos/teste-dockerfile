@@ -1,5 +1,7 @@
-FROM registry.access.redhat.com/ubi9/php-81
+FROM registry.access.redhat.com/ubi9
 
-ARG sleep='99999999'
+RUN yum update &&\
+    yum install -y libpng-dev &&\
+    yum install -y vim 
 
 CMD [ "ls" ]
