@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9
+FROM github.com/sclorg/cakephp-ex.git
 
 USER root
 
