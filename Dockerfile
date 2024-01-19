@@ -1,5 +1,5 @@
 FROM registry.access.redhat.com/ubi9
 
-RUN yum update
+RUN yum -y update
 
 CMD [ "ls" ]
