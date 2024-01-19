@@ -1,5 +1,5 @@
-FROM registry.access.redhat.com/ubi9
+FROM registry.access.redhat.com/ubi9/nginx-122
 
-RUN yum -y update && yum install -y libpng-dev
+RUN yum -y update
 
 CMD [ "ls" ]
