@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9/nginx-122
+FROM registry.access.redhat.com/ubi9/php-81
 
 ENV APP_HOME /var/www/html
 
@@ -8,4 +8,4 @@ USER root
 
 EXPOSE 8080
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["php", "-g", "daemon off;"]
