@@ -6,7 +6,7 @@ USER root
 
 COPY index.html ${APP_HOME}
 
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx
 
 EXPOSE 80
 
