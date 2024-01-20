@@ -4,8 +4,8 @@ ENV APP_HOME /var/www/html
 
 USER root
 
-# COPY index.html ${APP_HOME}
+COPY index.php ${APP_HOME}
 
 EXPOSE 8080
 
-CMD ["php", "-g", "daemon off;"]
+CMD ["php", "-f", "index.php]
