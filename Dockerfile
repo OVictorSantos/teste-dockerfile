@@ -12,4 +12,4 @@ USER root
 
 RUN yum -y update
 
-CMD ["ls"]
+CMD cat index.html
