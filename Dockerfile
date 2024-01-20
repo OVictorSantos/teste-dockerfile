@@ -1,8 +1,10 @@
 FROM registry.access.redhat.com/ubi9/nginx-122
 
-WORKDIR /var/www/html
+WORKDIR /usr/share/nginx/html
 
-ADD . .
+ADD index.html .
+
+EXPOSE 80
 
 RUN ls
 
@@ -10,4 +12,4 @@ USER root
 
 RUN yum -y update
 
-CMD ["ls && pwd"]
+CMD ["ls"]
