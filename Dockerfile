@@ -2,7 +2,9 @@ FROM registry.access.redhat.com/ubi9/nginx-122
 
 ENV APP_HOME /var/www/html
 
-COPY index.html .
+USER root
+
+COPY index.html ${APP_HOME}
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
