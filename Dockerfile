@@ -6,12 +6,8 @@ WORKDIR ${APP_HOME}
 
 COPY index.html .
 
+COPY nginx.conf /etc/nginx/nginx.conf
+
 EXPOSE 80
-
-RUN ls
-
-USER root
-
-RUN yum -y update
 
 CMD ["nginx", "-g", "daemon off;"]
