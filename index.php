@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello, World! Page</title>
+</head>
+<body>
 <?php
-echo "Hello there, this is a PHP Apache container";
+    echo 'Hello, World!';
 ?>
+</body>
+</html>

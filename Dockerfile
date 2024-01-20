@@ -4,7 +4,10 @@ ENV APP_HOME /var/www/html
 
 USER root
 
-COPY index.html ${APP_HOME}
+RUN systemctl restart httpd
+RUN systemctl start php-fpm
+
+COPY . ${APP_HOME}
 
 EXPOSE 8080
 
