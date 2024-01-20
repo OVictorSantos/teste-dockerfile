@@ -4,7 +4,7 @@ ENV APP_HOME /var/www/html
 
 WORKDIR ${APP_HOME}
 
-ADD index.html .
+COPY index.html .
 
 EXPOSE 80
 
