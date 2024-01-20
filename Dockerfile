@@ -1,5 +1,7 @@
 FROM registry.access.redhat.com/ubi9/nginx-122
 
+ENV APP_HOME /var/www/html
+
 WORKDIR /usr/share/nginx/html
 
 ADD index.html .
@@ -12,4 +14,4 @@ USER root
 
 RUN yum -y update
 
-CMD cat index.html
+CMD ["nginx", "-g", "daemon off;"]
