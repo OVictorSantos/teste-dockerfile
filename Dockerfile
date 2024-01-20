@@ -6,6 +6,6 @@ USER root
 
 # COPY index.html ${APP_HOME}
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
