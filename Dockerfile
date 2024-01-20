@@ -2,7 +2,7 @@ FROM registry.access.redhat.com/ubi9/nginx-122
 
 ENV APP_HOME /var/www/html
 
-WORKDIR /usr/share/nginx/html
+WORKDIR ${APP_HOME}
 
 ADD index.html .
 
