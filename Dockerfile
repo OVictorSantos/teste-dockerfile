@@ -8,4 +8,4 @@ COPY index.php ${APP_HOME}
 
 EXPOSE 8080
 
-CMD ["php", "-f", "index.php]
+CMD ["php", "-f", "index.php"]
