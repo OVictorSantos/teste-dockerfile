@@ -6,8 +6,6 @@ USER root
 
 COPY index.html ${APP_HOME}
 
-COPY nginx.conf /etc/nginx
-
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
