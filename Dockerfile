@@ -4,7 +4,7 @@ ENV APP_HOME /var/www/html
 
 USER root
 
-COPY index.html ${APP_HOME}
+# COPY index.html ${APP_HOME}
 
 EXPOSE 80
 
