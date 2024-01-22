@@ -1,8 +1,8 @@
 FROM registry.access.redhat.com/ubi9/php-81
 
-WORKDIR /var/www/html
+COPY welcome.conf /etc/httpd/conf.d
 
-COPY index.html .
+COPY index.html /var/www/html
 
 EXPOSE 8080
 
