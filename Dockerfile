@@ -1,6 +1,8 @@
 FROM registry.access.redhat.com/ubi9/php-81
 
-COPY index.php /var/www/html
+WORKDIR /var/www/html
+
+COPY index.php .
 
 EXPOSE 8080
 
