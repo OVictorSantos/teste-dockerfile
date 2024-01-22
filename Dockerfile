@@ -1,9 +1,7 @@
 FROM registry.access.redhat.com/ubi9/php-81
 
-USER root
-
 COPY src/index.php /var/www/html
 
-EXPOSE 80
+EXPOSE 8080
 
-CMD ["pwd"]
+CMD httpd -D FOREGROUND
