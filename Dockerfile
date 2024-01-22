@@ -8,4 +8,4 @@ COPY src/ ${APP_HOME}
 
 EXPOSE 80
 
-CMD ["php", "src/index.php"]
+CMD ["php", "${APP_HOME}/src/index.php"]
