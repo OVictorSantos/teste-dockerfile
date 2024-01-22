@@ -7,3 +7,5 @@ USER root
 COPY src/ ${APP_HOME}
 
 EXPOSE 80
+
+CMD ["apache2-foreground"]
