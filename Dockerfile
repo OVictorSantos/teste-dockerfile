@@ -1,8 +1,7 @@
-FROM registry.access.redhat.com/ubi9/php-81
+FROM registry.access.redhat.com/ubi9/httpd-24
 
 USER 0
-COPY index.html /tmp/src
-RUN chown -R 1001:0 /tmp/src
-USER 1001
 
-CMD /usr/libexec/s2i/run
+COPY httpd.conf /etc/httpd/conf
+
+COPY --chmod=777 index.php /opt/app-root/src

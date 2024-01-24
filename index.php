@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello, World! Page</title>
+        <title>Teste PHP</title>
     </head>
     <body>
-    <?php
-        echo 'Hello, World!';
-    ?>
+        <?php echo "<h1>Olá Mundo</h1>"?>
     </body>
 </html>
