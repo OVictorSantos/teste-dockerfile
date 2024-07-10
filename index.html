@@ -1,15 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste page</title>
-</head>
-<body>
-    <h1>Teste page</h1>
+    <title>Mac Frio</title>
 
-    <?php
-        echo 'Hello, World!';
-    ?>
+    <link rel="stylesheet" href="src/style/reset.css">
+    <link rel="stylesheet" href="src/style/menu.css">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="shortcut icon" href="src/images/logo-mac-frio-icon.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="src/images/logo-mac-frio.png"
+                    alt="logo mac frio" class="logo-img">
+            </a>
+
+            <nav>
+                <input type="checkbox" id="menu-hamburguer">
+
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="#quem-somos"> Quem somos</a></li>
+                    <li><a href="#servicos"> Serviços</a></li>
+                    <li><a href="#contato"> Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+
+    </section>
+
+    <section class="quem-somos" id="quem-somos">
+        <h2 class="title-section">QUEM SOMOS?</h2>
+        <div class="articles">
+            <article class="card">
+                <div class="card-header">
+                    <img src="src/images/motivacao.jpg" alt="imagem de perfil do Kadu" class="card-image">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="card-titulo">O que nos motiva?</h3>
+                    <p class="card-texto">Oferecer climatização ideal e agradável durante trajetos de carro, maximizando a experiência do motorista e passageiros.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <img src="src/images/atendimento.jpg" alt="imagem de perfil do Kadu" class="card-image">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="card-titulo">Prezamos por um bom Atendimento</h3>
+                    <p class="card-texto">Nosso foco é garantir a satisfação dos clientes, oferecendo orientação especializada e serviços de qualidade.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <img src="src/images/cliente.jpg" alt="imagem de perfil do Kadu" class="card-image">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="card-titulo">Foco no Cliente</h3>
+                    <p class="card-texto">Nossa dedicação está em compreender as necessidades individuais dos clientes e proporcionar soluções de ar-condicionado automotivo que atendam plenamente às suas expectativas.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="servicos" id="servicos">
+
+        <h2 class="title-section">NOSSOS SERVIÇOS</h2>
+        <div class="articles">
+            <article class="card">
+                <div class="card-header">
+                    <img src="src/images/manifold-ar-condicionado-automotivo.jpg" alt="imagem de perfil do Kadu"
+                        class="card-image">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="card-titulo">Carga de gás</h3>
+                    <p class="card-texto">Restauramos a eficiência e o desempenho do sistema, recarregando o gás refrigerante de forma precisa e segura, garantindo um ambiente fresco e confortável dentro do veículo, mesmo nos dias mais quentes.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <img src="src/images/filtro.jpg" alt="imagem de perfil do Kadu" class="card-image">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="card-titulo">Troca do filtro e higienização</h3>
+                    <p class="card-texto">Aprimoramos a qualidade do ar interno do seu veículo através da substituição do filtro de ar-condicionado. Além disso, realizamos uma higienização completa do sistema.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <img src="src/images/painel.jpeg" alt="imagem de perfil do Kadu" class="card-image">
+                </div>
+
+                <div class="card-body">
+                    <h3 class="card-titulo">Manutenção e instalação</h3>
+                    <p class="card-texto">Oferecemos serviços completos de manutenção e instalação de ar-condicionado automotivo, garantindo um funcionamento impecável e máximo conforto em todas as viagens.</p>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+    <section class="contato" id="contato">
+        <h2 class="title-section">CONTATO</h2>
+        <div class="infos">
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5419.973944938346!2d-47.951282688352535!3d-16.143128662772003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93599a7af3ef63b3%3A0x587730929b58cfab!2sMac%20Frio!5e0!3m2!1spt-BR!2sbr!4v1686359666104!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
+            </div>
+
+            <div>
+                <div class="info">
+                    <h3 class="card-titulo">Mac Frio ar-condicionado automotivo</h3>
+                    <p><a href="https://wa.me/556136236853" target="_blank"  class="strong">Fale conosco<i class="fa-brands fa-square-whatsapp fa-bounce fa-2xl "style="color: #ffffff;"></i></a><p>
+                    
+                    <p class="strong">Endereço<p>
+                    <p>Avenida Prefeito José Rodrigues dos Réis, Quadra 4, Lote 25 - Jardim do Ingá, Luziânia - GO
+                    </p>
+                </div>
+
+                <div class="info">
+                    <h3 class="card-titulo">Nos acompanhe</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/macfrio2014/" target="_blank" class="strong"><i class="fa-brands fa-square-instagram fa-bounce fa-2xl "style="color: #ffffff;" ></i>Instagram</a></li>
+
+                        <li><a href="https://www.facebook.com/profile.php?id=100066703393847" target="_blank" rel="noopener noreferrer" class="strong"><i class="fa-brands fa-square-facebook fa-bounce fa-2xl "style="color: #ffffff;"></i>Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="rodape">
+        <p>© Mac Frio ar-condicionado automotivo - Todos os direitos reservados - 2023</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>

@@ -1,0 +1,244 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* background-color: rgb(0, 60, 255); */
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* HEADER*/
+
+.header {
+    background-color: #fff;
+}
+
+.header-container {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header .header-container img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+/*HERO*/
+
+.hero {
+    height: 89vh;
+    background: url(../images/ar-condicionado.png) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero:after {
+    content: url(../images/seta_branca.png);
+    height: 35px;
+    bottom: 40px;
+    position: absolute;
+    animation: dowarrow 0.6s infinite alternate;
+}
+
+@-webkit-keyframes dowarrow {
+    0% { -webkit-transform: translateY(0); opacity: 0.4;}
+    100% { -webkit-transform: translateY(0.4em); opacity: 0.9;}
+}
+
+@media (max-width: 425px) {
+    .hero {
+        height: 60vh;
+    }
+}
+
+/* CARDS */
+
+.title-section {
+    margin: 20px auto;
+    font-weight: 700;
+    font-size: 4rem;
+    padding: 20px;
+    color: #152131;
+}
+
+@media(max-width: 500px) {
+    .title-section {
+        text-align: center;
+    }
+}
+
+.articles {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 460px;
+    margin: 25px;
+    background-color: #152131;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card-header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+.card-body {
+    text-align: center;
+    font-family: sans-serif;
+    height: 170px;
+    padding: 15px;
+}
+
+.card-titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.card-texto {
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 250px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* FIM */
+
+/*QUEM SOMOS E NOSSOS SERVICOS*/
+
+.quem-somos, .servicos, .contato {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+/* CONTATO */
+
+.infos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.maps {
+    margin-left: 30px;
+}
+
+@media (max-width:680px) {
+    .maps {
+        width: 510px;
+        height: 430px;
+        margin: auto;
+    }
+}
+
+@media (max-width:550px) {
+    .maps {
+        width: 100%;
+        height: 430px;
+        margin: auto;
+    }
+}
+
+.info {
+    height: 190px;
+    margin: 25px;
+    padding: 0 5px 0 5px;
+    background-color: #152131;
+    border-radius: 20px;
+}
+
+.info .card-titulo {
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.info p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 1px;
+    padding: 0 2px 0 15px;
+    color: #fff;
+}
+
+.info .strong {
+    font-weight: bold;
+    color: #fff;
+}
+
+.info p svg {
+    margin-left: 10px;
+}
+
+.info ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.info li {
+    display: flex;
+    justify-content: center;
+}
+
+.info li a {
+    color: #fff;
+}
+
+.info li svg {
+    margin-right: 10px;
+}
+
+@media (max-width:500px) {
+    .info {
+       height: 350px;
+    }
+
+    .info ul {
+        flex-direction: column;
+    }
+
+    .info ul li {
+        margin: 40px;
+    }
+}
+
+.rodape {
+    text-align: center;
+    background-color: #152131;
+    color: white;
+    padding: 10px;
+    font-size: 1.8rem;
+}
